@@ -1,0 +1,32 @@
+.move-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: move_box;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move_box {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: aqua;
+    transform: translateZ(-500px);
+  }
+  50% {
+    background-color: black;
+    transform: rotate(180deg);
+    transform: translateX(500px);
+  }
+  75% {
+    background-color: forestgreen;
+    transform: translateZ(-500px);
+    }
+  100% {
+   background-color: blue;
+transform: translateX(-500px);
+  }
+}
